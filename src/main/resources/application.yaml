@@ -8,8 +8,13 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/ahmedabdelnaby/dento-config-server.git
+          uri: https://github.com/ahmedabdelnaby/dento-configs-repo.git
           default-label: master
           timeout: 5
           clone-on-start: true
           force-pull: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
