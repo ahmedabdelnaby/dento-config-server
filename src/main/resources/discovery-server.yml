@@ -1,0 +1,22 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: discovery-server
+  config:
+    import: optional:config-server
+
+#  cloud:
+#    config:
+#      uri: http://localhost:8888
+#      fail-fast: true
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false # tells Eureka don't register yourself
+    fetch-registry: false # tells Eureka don't fetch other MSs details, lets them register themselves with you
+    service-url:
+      defaultZone: http://${eureka-instance-hostname}:${server.port}/eureka/
