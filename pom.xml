@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.fitrah.dento</groupId>
-	<artifactId>config-server</artifactId>
+	<artifactId>dento-config-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>config-server</name>
+	<name>dento-config-server</name>
 	<description>A centralized config server for Fitrah Dento platform.</description>
 
 	<developers>
